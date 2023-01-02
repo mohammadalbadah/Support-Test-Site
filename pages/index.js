@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Script from 'next/script'
+
 
 export default function Home() {
   return (
@@ -21,6 +23,7 @@ export default function Home() {
       <footer className={styles.footer}>
 
       </footer>
+      <Script type="text/javascript" src="https://t.contentsquare.net/uxa/2c5142b15f133.js"></Script>
     </div>
   )
 }
