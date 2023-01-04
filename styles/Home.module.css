@@ -40,7 +40,7 @@
 }
 
 .title {
-  margin: 0;
+  margin: 5;
   line-height: 1.15;
   font-size: 4rem;
 }
@@ -70,7 +70,6 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
 }
 
 .card {
@@ -116,13 +115,16 @@
 }
 
 @media (prefers-color-scheme: dark) {
+
   .card,
   .footer {
     border-color: #222;
   }
+
   .code {
     background: #111;
   }
+
   .logo img {
     filter: invert(1);
   }
