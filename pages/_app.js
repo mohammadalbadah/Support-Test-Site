@@ -1,8 +1,12 @@
 import '../styles/globals.css'
-import Home from '.'
+import Layout from '../components/Layout'
 
-function MyApp({ Component }) {
-  return <Component />
+function MyApp({ Component, pageProps }) {
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  )
 }
 
 export default MyApp

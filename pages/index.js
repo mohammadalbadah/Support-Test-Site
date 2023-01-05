@@ -4,25 +4,11 @@ import styles from '../styles/Home.module.css'
 import Script from 'next/script'
 import Link from 'next/link'
 
-// function loadPage(store) {
-//   switch (store) {
-//     case 'arsenal':
-//       open('/arsenal', '_self')
-//       break;
-//     case 'barcelona':
-//       open('/barcelona', '_self')
-//       break;
-//     case 'realmadrid':
-//       open('/realmadrid', '_self')
-//       break;
-//     default: return;
-//   }
-// }
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Support Test Site</title>
+        <title>Homepage</title>
         <link rel="icon" href="https://assets.contentsquare.com/design-tokens/assets/brand/logo/favicon.png" sizes="any" />
         <meta charset="utf-8"></meta>
       </Head>
