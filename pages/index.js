@@ -2,22 +2,22 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Script from 'next/script'
+import Link from 'next/link'
 
-function loadPage(store) {
-  switch (store) {
-    case 'arsenal':
-      open('/arsenal', '_self')
-      break;
-    case 'barcelona':
-      open('/barcelona', '_self')
-      break;
-    case 'realmadrid':
-      open('/realmadrid', '_self')
-      break;
-    default: return;
-  }
-}
-
+// function loadPage(store) {
+//   switch (store) {
+//     case 'arsenal':
+//       open('/arsenal', '_self')
+//       break;
+//     case 'barcelona':
+//       open('/barcelona', '_self')
+//       break;
+//     case 'realmadrid':
+//       open('/realmadrid', '_self')
+//       break;
+//     default: return;
+//   }
+// }
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -32,9 +32,15 @@ export default function Home() {
           Choose your club
         </h1>
         <li className={styles.grid}>
-          <img src={'https://logos-world.net/wp-content/uploads/2020/05/Arsenal-Logo.png'} onClick={() => { loadPage('arsenal') }} height={200} />
-          <img src={'https://logos-world.net/wp-content/uploads/2020/04/Barcelona-Logo.png'} onClick={() => { loadPage('barcelona') }} height={200} />
-          <img src={'https://logos-world.net/wp-content/uploads/2020/06/Real-Madrid-symbol.png'} onClick={() => { loadPage('realmadrid') }} height={200} />
+          <Link href="/arsenal">
+            <img src={'https://logos-world.net/wp-content/uploads/2020/05/Arsenal-Logo.png'} height={200} />
+          </Link>
+          <Link href="/barcelona">
+            <img src={'https://logos-world.net/wp-content/uploads/2020/04/Barcelona-Logo.png'} height={200} />
+          </Link>
+          <Link href="/realmadrid">
+            <img src={'https://logos-world.net/wp-content/uploads/2020/06/Real-Madrid-symbol.png'} height={200} />
+          </Link>
         </li>
 
       </main>
