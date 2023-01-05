@@ -2,17 +2,20 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Script from 'next/script'
+import Arsenal from './arsenal'
+import Barcelona from './barcelona'
+import RealMadrid from './realmadrid'
 
 function loadPage(store) {
   switch (store) {
     case 'arsenal':
-      open('https://www.arsenal.com/', '_self')
+      open('/arsenal', '_self')
       break;
     case 'barcelona':
-      open('https://www.fcbarcelona.com/', '_self')
+      open('/barcelona', '_self')
       break;
     case 'realmadrid':
-      open('https://www.realmadrid.com/', '_self')
+      open('/realmadrid', '_self')
       break;
     default: return;
   }
@@ -43,36 +46,6 @@ export default function Home() {
 
       </footer>
       <Script type="text/javascript" src="https://t.contentsquare.net/uxa/2c5142b15f133.js"></Script>
-    </div>
-  )
-}
-
-export function Arsenal() {
-  return (
-    <div>
-      <h1>
-        Arsenal Store
-      </h1>
-    </div>
-  )
-}
-
-export function Barclona() {
-  return (
-    <div>
-      <h1>
-        Barclona Store
-      </h1>
-    </div>
-  )
-}
-
-export function RealMadrid() {
-  return (
-    <div>
-      <h1>
-        RealMadrid Store
-      </h1>
     </div>
   )
 }

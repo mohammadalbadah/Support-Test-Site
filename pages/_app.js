@@ -1,8 +1,8 @@
 import '../styles/globals.css'
 import Home from '.'
 
-function MyApp({ }) {
-  return <Home />
+function MyApp({ Component }) {
+  return <Component />
 }
 
 export default MyApp
