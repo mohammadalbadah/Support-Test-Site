@@ -27,7 +27,6 @@ export default function Home() {
       <footer className={styles.footer}>
 
       </footer>
-      <Script type="text/javascript" src="https://t.contentsquare.net/uxa/2c5142b15f133.js"></Script>
     </div>
   )
 }
