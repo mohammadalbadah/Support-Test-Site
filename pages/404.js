@@ -6,7 +6,7 @@ const NotFound = () => {
     return (
         <>
             <Head>
-                <title>Shop | Real Madrid</title>
+                <title>Page Not Found</title>
                 <link rel="icon" href="https://assets.contentsquare.com/design-tokens/assets/brand/logo/favicon.png" sizes="any" />
                 <meta charset="utf-8"></meta>
             </Head>
