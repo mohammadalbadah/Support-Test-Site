@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Script from 'next/script'
@@ -7,12 +6,6 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Homepage</title>
-        <link rel="icon" href="https://assets.contentsquare.com/design-tokens/assets/brand/logo/favicon.png" sizes="any" />
-        <meta charset="utf-8"></meta>
-      </Head>
-
       <main className={styles.main}>
         <h1 className={styles.title}>
           Choose your club
