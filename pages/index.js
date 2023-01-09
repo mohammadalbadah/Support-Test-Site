@@ -11,17 +11,16 @@ export default function Home() {
           Choose your club
         </h1>
         <li className={styles.grid}>
-          <Link href="/arsenal">
-            <img className={styles.icon} src={'https://logos-world.net/wp-content/uploads/2020/05/Arsenal-Logo.png'} />
+          <Link href={{ pathname: "/products", query: "arsenal" }}>
+            <img src={'https://logos-world.net/wp-content/uploads/2020/05/Arsenal-Logo.png'} />
           </Link>
-          <Link href="/barcelona">
-            <img className={styles.icon} src={'https://logos-world.net/wp-content/uploads/2020/04/Barcelona-Logo.png'} />
+          <Link href={{ pathname: "/products", query: "barcelona" }}>
+            <img src={'https://logos-world.net/wp-content/uploads/2020/04/Barcelona-Logo.png'} />
           </Link>
-          <Link href="/realmadrid">
-            <img className={styles.icon} src={'https://logos-world.net/wp-content/uploads/2020/06/Real-Madrid-symbol.png'} />
+          <Link href={{ pathname: "/products", query: "realmadrid" }}>
+            <img src={'https://logos-world.net/wp-content/uploads/2020/06/Real-Madrid-symbol.png'} />
           </Link>
         </li>
-
       </main>
 
       <footer className={styles.footer}>
