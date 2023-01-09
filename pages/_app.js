@@ -14,13 +14,7 @@ function MyApp({ Component, pageProps }) {
     case '/': path = "HomePage"
       break;
 
-    case '/realmadrid': path = "Shop | Real Madrid"
-      break;
-
-    case '/arsenal': path = "Shop | Arsenal"
-      break;
-
-    case '/barcelona': path = "Shop | Barcelona"
+    case '/products': path = 'Shop'
       break;
 
     default: path = "Page Not Found"
