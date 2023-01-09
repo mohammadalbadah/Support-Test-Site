@@ -12,13 +12,13 @@ export default function Home() {
         </h1>
         <li className={styles.grid}>
           <Link href="/arsenal">
-            <img src={'https://logos-world.net/wp-content/uploads/2020/05/Arsenal-Logo.png'} height={200} />
+            <img className={styles.icon} src={'https://logos-world.net/wp-content/uploads/2020/05/Arsenal-Logo.png'} />
           </Link>
           <Link href="/barcelona">
-            <img src={'https://logos-world.net/wp-content/uploads/2020/04/Barcelona-Logo.png'} height={200} />
+            <img className={styles.icon} src={'https://logos-world.net/wp-content/uploads/2020/04/Barcelona-Logo.png'} />
           </Link>
           <Link href="/realmadrid">
-            <img src={'https://logos-world.net/wp-content/uploads/2020/06/Real-Madrid-symbol.png'} height={200} />
+            <img className={styles.icon} src={'https://logos-world.net/wp-content/uploads/2020/06/Real-Madrid-symbol.png'} />
           </Link>
         </li>
 
