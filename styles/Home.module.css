@@ -95,7 +95,7 @@
 }
 
 .card h2 {
-   margin: 0 0 1rem 0;
+  margin: 0 0 1rem 0;
   font-size: 1vw;
 }
 
@@ -147,19 +147,20 @@
 .card h1 {
   font-size: 1.5vw;
 }
-.productName{
+
+.productName {
   height: 70px;
 }
 
 @media (max-width: 600px) {
   .grid {
     width: 100%;
-    flex-direction: column ;
-     display: flex;
+    flex-direction: column;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-  
+
   }
 
   .title {
@@ -172,7 +173,8 @@
     height: 150px;
   }
 
-  .card h1, .card h2 {
+  .card h1,
+  .card h2 {
     font-size: 5vw;
   }
 }
