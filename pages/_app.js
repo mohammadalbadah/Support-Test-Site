@@ -24,8 +24,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <Layout>
-      <Script id="customDataLayer" dangerouslySetInnerHTML={{__html:`window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({'test':'true'});`}}></Script>
+      <Script id="customDataLayer" dangerouslySetInnerHTML={{__html:`window.dataLayer = window.dataLayer || [];window.dataLayer.push({'test':${location.search.indexOf('test') > -1}});`}}></Script>
       <Script id="GTM" strategy="afterInteractive" dangerouslySetInnerHTML={{
         __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
